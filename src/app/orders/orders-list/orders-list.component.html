@@ -1,1 +1,15 @@
-<p>orders-list works!</p>
+<mat-tab-group>
+  <mat-tab label="Orders">
+    <p>Orders here.-Eager Fetch</p>
+  </mat-tab>
+  <mat-tab label="Shipments">
+    <ng-template matTabContent>
+      <p>Shipments here-Lazy Loaded</p>
+    </ng-template>
+  </mat-tab>
+  <mat-tab label="Archived">
+    <ng-template matTabContent>
+      <p>Old orders here</p>
+    </ng-template>
+  </mat-tab>
+</mat-tab-group>
